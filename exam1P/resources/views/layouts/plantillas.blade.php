@@ -9,7 +9,6 @@
 </head>
 <body>
     @yield("contenido")
-    @include("scrollspy")
-    
+    @include("partials.scrollspy")s
 </body>
 </html>

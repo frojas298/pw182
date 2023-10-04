@@ -1,13 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Inicio </title>
-    @vite(["resources/js/app.js"])
-</head>
-<body>
-    <h1> Inicio </h1>
+
+@extends("layouts.plantillas")
+
+@section("titulo","Inicio")
+
+@section("contenido")
+
+<h1 class="display-1 text-center text-danger mt-5"> Home</h1>
+
+
+@endsection
+
     
-</body>
-</html>

@@ -1,13 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vista 2</title>
-    @vite(["resources/js/app.js"])
-</head>
-<body>
-    <h1>Vista 2</h2>
-    
-</body>
-</html>
+
+@extends("layouts.plantillas")
+
+@section("titulo","Vista 2")
+
+@section("contenido")
+
+<h1 class="display-1 text-center text-danger mt-5"> Vista 2</h1>
+
+
+   
+@endsection
