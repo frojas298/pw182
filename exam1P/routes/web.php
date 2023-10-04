@@ -13,14 +13,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-/*
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('welcome');
 });
+
+Auth::routes();
 */
 
-Route::view('/', 'welcome')-> name("ApodoInicio");
-Route::view('/formulario', 'formulario')-> name("apodoFormulario");
-Route::view('/recuerdos', 'recuerdos')-> name ("apodoRecuerdos");
-
- 
+Route::view('/', 'inicio');
+Route::view('/vista1', 'vista1');
+Route::view ('/vista2','vista2');
+Route::view('/vista3', 'vista3');
