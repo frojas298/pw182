@@ -11,7 +11,7 @@ class validadorFormLib extends FormRequest
      */
     public function authorize(): bool
     {
-        return false;
+        return true;
     }
 
     /**
@@ -23,6 +23,12 @@ class validadorFormLib extends FormRequest
     {
         return [
             //
+            'txtIsbn' => 'required|min:13 | regex:/^[0-9]+$/',
+            'txtTitulo' => 'required | max:10',
+            'txtAutor' => 'required|max:50',
+            'txtPaginas' => 'required | max:50 | regex:/^[0-9]+$/',
+            'txtEditorial' => 'required|max:50',
+            'txtEmail' => 'required | max:50 |email',
         ];
     }
 }

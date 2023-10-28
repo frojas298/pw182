@@ -1,6 +1,14 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\libController;
+
+Route::get('/',[libController::class,'metodoWelcome'] )->name('Welcome');
+
+Route::get('/registro',[libController::class,'metodoRegistro'] )->name('Registro');
+
+Route::post('/guardarRegistro',[libController::class,'metodoGuardar'] )->name('Guardar');
+
 
 /*
 |--------------------------------------------------------------------------
@@ -13,13 +21,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+/* Route::get('/', function () {
     return view('welcome');
 });
 
 Route::get('/registro', function () {
     return view('registro');
-});
+}); */
 
 
 /* Auth::routes();
